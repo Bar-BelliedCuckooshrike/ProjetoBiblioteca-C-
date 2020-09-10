@@ -15,6 +15,8 @@ namespace ProjetoBiblioteca.View
             user.Nome = Console.ReadLine();
             Console.WriteLine("\nCpf: ");
             user.Cpf = Console.ReadLine();
+            Console.WriteLine("\nSenha: ");
+            user.senha = Console.ReadLine();
         }
     }
 }

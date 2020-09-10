@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoBiblioteca.View;
+using System;
 
 namespace ProjetoBiblioteca
 {
@@ -12,7 +13,8 @@ namespace ProjetoBiblioteca
             {
                 Console.WriteLine("-----MINHA BIBLIOTECA-----\n");
                 Console.WriteLine("Selecione uma opção: \n");
-                Console.WriteLine("[1] - Fazer login");
+                Console.WriteLine("[1] - Cadastrar Usuário");
+                Console.WriteLine("[2] - Fazer login");
                 Console.WriteLine("[0] - Sair");
                 op = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -20,10 +22,11 @@ namespace ProjetoBiblioteca
                 switch (op)
                 {
                     case 1:
-                        Console.WriteLine("[1] - Cadastrar um livro");
-                        Console.WriteLine("[2] - Listar livros");
-                        Console.WriteLine("[3] - Editar estante");
-                        Console.WriteLine("[4] - Editar livros");
+                        CadastrarUsuario.cadastrarUser();
+                        break;
+
+                    case 2:
+
                         break;
 
                     case 0:

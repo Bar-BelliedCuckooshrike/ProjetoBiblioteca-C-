@@ -21,6 +21,18 @@ namespace ProjetoBiblioteca.DAL
             return null;
         }
 
+        public static Usuario BuscarSenhaUsuario(string senha)
+        {
+            foreach (Usuario usuarioSenha in users)
+            {
+                if (usuarioSenha.senha == senha)
+                {
+                    return usuarioSenha;
+                }
+            }
+            return null;
+        }
+
         public static bool CadastrarUsuario(Usuario usuario)
         {
             if (UsuarioCPFbuscar(usuario.Cpf) == null)
