@@ -1,4 +1,5 @@
 ﻿using ProjetoBiblioteca.DAL;
+using ProjetoBiblioteca.Model;
 using ProjetoBiblioteca.Utils;
 using System;
 using System.Collections.Generic;
@@ -10,18 +11,21 @@ namespace ProjetoBiblioteca.View
     {
         public static void LoginUsuario()
         {
+            Usuario usuario = new Usuario();
+
             Console.WriteLine("CPF: ");
             string cpf = Console.ReadLine();
             Console.WriteLine("\nSenha: ");
             string senha = Console.ReadLine();
 
-            if (UsuarioDAL.UsuarioCPFbuscar(cpf))
+            if (cpf == usuario.Cpf)
             {
-                if (UsuarioDAL.BuscarSenhaUsuario(senha))
+                if (senha == usuario.senha)
                 {
 
                 }
             }
+           
 
 
         }
