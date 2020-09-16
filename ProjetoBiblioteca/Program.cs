@@ -26,7 +26,7 @@ namespace ProjetoBiblioteca
                         break;
 
                     case 2:
-
+                        Login.LoginUsuario();
                         break;
 
                     case 0:

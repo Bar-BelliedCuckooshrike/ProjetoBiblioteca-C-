@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
         "projectName": "ProjetoBiblioteca",
         "projectPath": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
-        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\TEMP.DESKTOP-SD95ONB.004\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TEMP.DESKTOP-SD95ONB.004\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

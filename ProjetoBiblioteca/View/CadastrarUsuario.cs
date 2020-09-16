@@ -9,14 +9,15 @@ namespace ProjetoBiblioteca.View
     {
         public static void cadastrarUser()
         {
-            Usuario user = new Usuario();
-            Console.WriteLine("CADASTRAR USUÁRIO");
-            Console.WriteLine("Nome: ");
-            user.Nome = Console.ReadLine();
+            Usuario u = new Usuario();
+
+            Console.WriteLine("CADASTRAR USUARIO: ");
+            Console.WriteLine("\nNome: ");
+            u.Nome = Console.ReadLine();
             Console.WriteLine("\nCpf: ");
-            user.Cpf = Console.ReadLine();
-            Console.WriteLine("\nSenha: ");
-            user.senha = Console.ReadLine();
+            u.Cpf = Console.ReadLine();
+            Console.WriteLine("\nSenha:");
+            u.senha = Console.ReadLine();
         }
     }
 }

@@ -1,46 +1,24 @@
 ﻿using ProjetoBiblioteca.Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ProjetoBiblioteca.DAL
 {
     class UsuarioDAL
     {
-        private static List<Usuario> users = new List<Usuario>();
+        private static Context ctx = new Context();
         
-        public static Usuario UsuarioCPFbuscar(string cpf)
+        public static void CadastrarUsuario(Usuario usuario)
         {
-            foreach (Usuario usuarioCad  in users)
-            {
-                if (usuarioCad.Cpf == cpf)
-                {
-                    return usuarioCad;
-                }
-            }
-            return null;
+            ctx.Usuarios.Add(usuario);
+            ctx.SaveChanges();
         }
 
-        public static Usuario BuscarSenhaUsuario(string senha)
-        {
-            foreach (Usuario usuarioSenha in users)
-            {
-                if (usuarioSenha.senha == senha)
-                {
-                    return usuarioSenha;
-                }
-            }
-            return null;
-        }
+        public static Usuario BuscarCPF(string cpf) => ctx.Usuarios.Find(cpf);
 
-        public static bool CadastrarUsuario(Usuario usuario)
-        {
-            if (UsuarioCPFbuscar(usuario.Cpf) == null)
-            {
-                users.Add(usuario);
-                return true;
-            }
-            return false;
-        }
+        public static Usuario BuscarSenha(string senha) => 
+            ctx.Usuarios.FirstOrDefault(x => x.senha.Equals(senha)); //Expressão Lambda: (x => x.senha.Equals(senha);
     }
 }
