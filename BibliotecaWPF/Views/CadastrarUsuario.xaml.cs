@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliotecaWPF.DAL;
+using BibliotecaWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -24,19 +26,23 @@ namespace BibliotecaWPF.Views
 
         private void BtnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            string UserName = TxtNome.Text;
-            try
+            Usuario usuario = new Usuario
             {
-                int Cpf = Convert.ToInt32(TxtCPF.Text);
-            }
-            catch (Exception)
-            {
+                Nome = TxtNome.Text,
+                Cpf = TxtCPF.Text,
+                senha = TxtSenha.Text
+            };
 
-                MessageBox.Show("CPF: Digite apenas Números!");
+            if (UsuarioDAL.Cadastrar(usuario))
+            {
+                MessageBox.Show("Usuário cadastrado com sucesso!", "Minha Biblioteca",
+                    MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
-            string Pass = TxtSenha.Text;            
-            
-            MessageBox.Show($"Nome: {UserName}");
+            else
+            {
+                MessageBox.Show("Esse usuário já existe!", "Minha Biblioteca", 
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
