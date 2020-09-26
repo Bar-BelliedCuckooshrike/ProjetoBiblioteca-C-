@@ -55,9 +55,12 @@ namespace ProjetoBiblioteca.Migrations
                     b.Property<string>("Editora")
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<string>("Genero")
                         .HasColumnType("nvarchar(max)");
 
+=======
+>>>>>>> 9618c617a94abd971c4de925e307422be3bbb7b2
                     b.Property<int>("NumeroPaginas")
                         .HasColumnType("int");
 

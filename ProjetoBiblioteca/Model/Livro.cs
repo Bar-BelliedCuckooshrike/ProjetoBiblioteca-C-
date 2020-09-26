@@ -17,6 +17,9 @@ namespace ProjetoBiblioteca.Model
         public string Isbn { get; set; }
         public string Editora { get; set; }
         public int Edicao { get; set; }
+<<<<<<< HEAD
         public string Genero { get; set; }
+=======
+>>>>>>> 9618c617a94abd971c4de925e307422be3bbb7b2
     }
 }

@@ -5666,11 +5666,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Felipe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Windows 10\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> 9618c617a94abd971c4de925e307422be3bbb7b2
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\ProjetoBiblioteca-C--master\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
       "projectName": "ProjetoBiblioteca",
       "projectPath": "C:\\Users\\Felipe\\Desktop\\ProjetoBiblioteca-C--master\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
@@ -5679,6 +5685,19 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
+      "projectName": "ProjetoBiblioteca",
+      "projectPath": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\ProjetoBiblioteca.csproj",
+      "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows 10\\source\\repos\\ProjetoBiblioteca\\ProjetoBiblioteca\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9618c617a94abd971c4de925e307422be3bbb7b2
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5728,7 +5747,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+>>>>>>> 9618c617a94abd971c4de925e307422be3bbb7b2
       }
     }
   }
