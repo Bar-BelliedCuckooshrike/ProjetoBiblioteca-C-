@@ -14,11 +14,11 @@
         <Label Content="Editora:" HorizontalAlignment="Left" Margin="31,173,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold"/>
         <Label Content="Edição:" HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Center" FontFamily="Consolas" FontWeight="Bold"/>
         <Label Content="Gênero:" HorizontalAlignment="Left" Margin="31,234,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Consolas"/>
-        <TextBox x:Name="TxtTitulo" HorizontalAlignment="Left" Margin="92,94,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="TxtTitulo" HorizontalAlignment="Left" Margin="92,94,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
         <Label Content="ISBN:" HorizontalAlignment="Left" Margin="41,263,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox x:Name="TxtAutor" HorizontalAlignment="Left" Margin="92,123,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="TxtAutor" HorizontalAlignment="Left" Margin="92,123,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" />
         <TextBox x:Name="TxtPaginas" HorizontalAlignment="Left" Margin="120,147,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
-        <TextBox x:Name="TxtEditora" HorizontalAlignment="Left" Margin="101,176,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="TxtEditora" HorizontalAlignment="Left" Margin="101,176,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" />
         <TextBox x:Name="TxtEdicao" HorizontalAlignment="Left" Margin="101,0,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="177"/>
         <TextBox x:Name="TxtGenero" HorizontalAlignment="Left" Margin="101,237,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
         <TextBox x:Name="TxtISBN" HorizontalAlignment="Left" Margin="101,266,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>

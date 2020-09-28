@@ -8,9 +8,9 @@
         Title="Minha Biblioteca" Height="450" Width="800" WindowStyle="ToolWindow" FontFamily="Arial" FontWeight="Bold" FontStyle="Normal" Closing="Window_Closing">
     <Grid>
         <Menu Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
-            <MenuItem x:Name="Login" Header="Login" Click="MenuItem_Click"/>
             <MenuItem x:Name="CadastrarUsuario" Header="Cadastrar usuário" Click="CadastrarUsuario_Click"/>
             <MenuItem x:Name="MenuSair" Header="Sair" Click="MenuSair_Click"/>
+            <MenuItem x:Name="Login" Header="Login" Click="Login_Click_1"/>
         </Menu>
 
     </Grid>

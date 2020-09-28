@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\App.xaml
-2354812131
+51173584466
 
-12502432111
+16-1031780554
 217-1302198605
-Views\CadastrarUsuario.xaml;Views\FormPrincipal.xaml;
+Views\CadastrarLivro.xaml;Views\CadastrarUsuario.xaml;Views\FormPrincipal.xaml;Views\Login.xaml;Views\MenuUsuario.xaml;
 
 False
 

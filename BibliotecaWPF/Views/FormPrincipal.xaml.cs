@@ -22,12 +22,7 @@ namespace BibliotecaWPF.Views
         {
             InitializeComponent();
            
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        }       
 
         private void MenuSair_Click(object sender, RoutedEventArgs e)
         {
@@ -47,6 +42,12 @@ namespace BibliotecaWPF.Views
         {
             CadastrarUsuario CadUser = new CadastrarUsuario();
             CadUser.Show();
+        }
+
+        private void Login_Click_1(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
         }
     }
 }

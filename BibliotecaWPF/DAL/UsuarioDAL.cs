@@ -23,5 +23,25 @@ namespace BibliotecaWPF.DAL
             }
             return false;
         }
+
+        public static Usuario buscarCPF(string cpf) =>
+            ctx.Usuarios.FirstOrDefault(x => x.Cpf.Equals(cpf));
+
+        public static Usuario buscarSenha(string senha) =>
+            ctx.Usuarios.FirstOrDefault(x => x.senha.Equals(senha));
+
+        
+
+        public static bool Logar(string cpf, string senha)
+        {
+            if (buscarCPF(cpf) != null)
+            {
+                if (buscarSenha(senha) != null)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

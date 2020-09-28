@@ -85,7 +85,7 @@ namespace BibliotecaWPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BibliotecaWPF;V1.0.0.0;component/views/cadastrarusuario.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BibliotecaWPF;component/views/cadastrarusuario.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\CadastrarUsuario.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
