@@ -19,6 +19,8 @@ namespace BibliotecaWPF.Views
     /// </summary>
     public partial class Login : Window
     {
+        Usuario usuario = new Usuario();
+
         public Login()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace BibliotecaWPF.Views
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Usuario usuario = new Usuario();
+            usuario = new Usuario();
 
             usuario.Cpf = TxtCPFlogin.Text;
             usuario.senha = TxtSenhaLogin.Text;
@@ -35,6 +37,9 @@ namespace BibliotecaWPF.Views
             {
                 MenuUsuario menuUsuario = new MenuUsuario();
                 menuUsuario.Show();
+                usuario = UsuarioDAL.buscarCPF(TxtCPFlogin.Text);
+                menuUsuario.txtConfirmLogin.Text = usuario.Cpf.ToString();
+                
             }
             else
             {

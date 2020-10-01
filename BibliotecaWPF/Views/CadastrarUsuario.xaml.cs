@@ -19,30 +19,52 @@ namespace BibliotecaWPF.Views
     /// </summary>
     public partial class CadastrarUsuario : Window
     {
+        Usuario usuario = new Usuario();
+
         public CadastrarUsuario()
         {
             InitializeComponent();
+            LimparFomulario();
         }
 
         private void BtnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            Usuario usuario = new Usuario
+            if (!string.IsNullOrWhiteSpace(TxtNome.Text) && !string.IsNullOrWhiteSpace(TxtSenha.Text) 
+                && !string.IsNullOrWhiteSpace(TxtCPF.Text))
             {
-                Nome = TxtNome.Text,
-                Cpf = TxtCPF.Text,
-                senha = TxtSenha.Text
-            };
+                usuario = new Usuario
+                {
+                    Nome = TxtNome.Text,
+                    Cpf = TxtCPF.Text,
+                    senha = TxtSenha.Text
+                };
 
-            if (UsuarioDAL.Cadastrar(usuario))
-            {
-                MessageBox.Show("Usuário cadastrado com sucesso!", "Minha Biblioteca",
-                    MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                if (UsuarioDAL.Cadastrar(usuario))
+                {
+                    MessageBox.Show("Usuário cadastrado com sucesso!", "Minha Biblioteca",
+                        MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    LimparFomulario();
+                }
+                else
+                {
+                    MessageBox.Show("Esse usuário já existe!", "Minha Biblioteca",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+                } 
             }
             else
             {
-                MessageBox.Show("Esse usuário já existe!", "Minha Biblioteca", 
+                MessageBox.Show("Preencha o campo vazio", "Minha Biblioteca",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        public void LimparFomulario()
+        {
+            TxtNome.Clear();
+            TxtCPF.Clear();
+            TxtSenha.Clear();
+
+            usuario = new Usuario();
         }
     }
 }

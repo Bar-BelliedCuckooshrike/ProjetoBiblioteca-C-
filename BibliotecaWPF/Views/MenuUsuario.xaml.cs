@@ -21,5 +21,11 @@ namespace BibliotecaWPF.Views
         {
             InitializeComponent();
         }
+
+        private void btnCadastrarLivro_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarLivro cadastrarLivro = new CadastrarLivro();
+            cadastrarLivro.Show();
+        }
     }
 }

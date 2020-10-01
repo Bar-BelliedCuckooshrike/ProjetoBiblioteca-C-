@@ -1,4 +1,5 @@
-﻿using BibliotecaWPF.Models;
+﻿using BibliotecaWPF.DAL;
+using BibliotecaWPF.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,6 +24,8 @@ namespace BibliotecaWPF.Views
             InitializeComponent();
         }
 
+        Usuario usuario = new Usuario();
+
         private void btnCadastrarLivro_Click(object sender, RoutedEventArgs e)
         {
             Livro livro = new Livro()
@@ -36,7 +39,21 @@ namespace BibliotecaWPF.Views
                 Isbn = TxtISBN.Text               
             };
 
-            //falta terminar
+            usuario.livro = livro;
+
+            if (LivroDAL.CadastrarLivro(usuario.livro)) //essa parte que eu nao sei como coloco um livro num usuario e numa estante; Usuario tem que possuir uma estante que possui livros;
+            {
+                MessageBox.Show("Livro cadastrado com sucesso!", "Cadastrar livro",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Não é permitido o mesmo ISBN!", "Cadastrar livro",
+                   MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+
+
         }
     }
 }
