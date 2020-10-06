@@ -62,3 +62,4 @@ C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netc
 C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.dll
 C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.pdb
 C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.genruntimeconfig.cache
+C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.csprojAssemblyReference.cache

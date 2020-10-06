@@ -9,6 +9,7 @@ namespace BibliotecaWPF.DAL
     class LivroDAL
     {
         private static Context ctx = new Context();
+        public static Usuario usuario = new Usuario();
 
         public static bool CadastrarLivro(Livro livro)
         {
@@ -16,6 +17,8 @@ namespace BibliotecaWPF.DAL
             {
                 ctx.Livros.Add(livro);
                 ctx.SaveChanges();
+
+                //usuario.estante.livros.Add(livro);
                 return true;
             }
             return false;

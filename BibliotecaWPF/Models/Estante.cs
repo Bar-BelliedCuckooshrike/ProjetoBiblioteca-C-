@@ -6,10 +6,16 @@ using System.Text;
 namespace BibliotecaWPF.Models
 {
     [Table("Estantes")]
-    class Estante : Livro
+    class Estante : BaseModel
     {
+        public Estante()
+        {
+            usuario = new Usuario();
+            livros = new List<Livro>();
+        }
+
         public string EstanteGenero { get; set; }
         public Usuario usuario { get; set; }
-        public Livro livro { get; set; }
+        public List<Livro> livros { get; set; }
     }
 }

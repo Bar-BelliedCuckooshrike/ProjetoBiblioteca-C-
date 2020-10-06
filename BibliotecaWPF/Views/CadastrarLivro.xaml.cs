@@ -24,10 +24,11 @@ namespace BibliotecaWPF.Views
             InitializeComponent();
         }
 
-        Usuario usuario = new Usuario();
+        
 
         private void btnCadastrarLivro_Click(object sender, RoutedEventArgs e)
         {
+           // Usuario usuario = new Usuario();
             Livro livro = new Livro()
             {
                 TituloLivro = TxtTitulo.Text,
@@ -37,12 +38,12 @@ namespace BibliotecaWPF.Views
                 Genero = TxtGenero.Text,
                 NumeroPaginas = Convert.ToInt32(TxtPaginas.Text),
                 Isbn = TxtISBN.Text               
-            };
+            };          
 
-            usuario.livro = livro;
-
-            if (LivroDAL.CadastrarLivro(usuario.livro)) //essa parte que eu nao sei como coloco um livro num usuario e numa estante; Usuario tem que possuir uma estante que possui livros;
+            if (LivroDAL.CadastrarLivro(livro)) //essa parte que eu nao sei como coloco um livro num usuario e numa estante; Usuario tem que possuir uma estante que possui livros;
             {
+                //usuario.estante.livros.Add(livro);
+
                 MessageBox.Show("Livro cadastrado com sucesso!", "Cadastrar livro",
                     MessageBoxButton.OK, MessageBoxImage.Information);
             }

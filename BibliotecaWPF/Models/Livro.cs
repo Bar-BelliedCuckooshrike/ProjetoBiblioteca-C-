@@ -15,5 +15,6 @@ namespace BibliotecaWPF.Models
         public string Editora { get; set; }
         public int Edicao { get; set; }
         public string Genero { get; set; }
+        public Usuario usuario { get; set; }
     }
 }

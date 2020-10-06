@@ -8,10 +8,11 @@ namespace BibliotecaWPF.Models
 
     [Table("Usuarios")]
     class Usuario : BaseModel
-    {
+    {       
+
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public string senha { get; set; }
-        public Livro livro { get; set; }
+        public List<Estante> estantes { get; set; } //mudar para lista de estantes;
     }
 }
