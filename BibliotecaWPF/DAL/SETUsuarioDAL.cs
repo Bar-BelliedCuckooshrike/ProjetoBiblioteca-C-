@@ -8,8 +8,10 @@ namespace BibliotecaWPF.DAL
 {
     class SETUsuarioDAL
     {
-        static Usuario usuariologado = new Usuario();
+        static Usuario usuariologado = new Usuario(); //objeto global
 
+
+        
         public static void UsuarioLogadoSET(Usuario usuario)
         {
             usuariologado = usuario;            

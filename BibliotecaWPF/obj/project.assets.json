@@ -5720,19 +5720,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
+    "C:\\Users\\fabricio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\ProjetoBiblioteca-C--master\\BibliotecaWPF\\BibliotecaWPF.csproj",
+      "projectUniqueName": "C:\\Users\\fabricio\\Desktop\\TRABALHO\\ProjetoBiblioteca-C-\\BibliotecaWPF\\BibliotecaWPF.csproj",
       "projectName": "BibliotecaWPF",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\ProjetoBiblioteca-C--master\\BibliotecaWPF\\BibliotecaWPF.csproj",
-      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Desktop\\ProjetoBiblioteca-C--master\\BibliotecaWPF\\obj\\",
+      "projectPath": "C:\\Users\\fabricio\\Desktop\\TRABALHO\\ProjetoBiblioteca-C-\\BibliotecaWPF\\BibliotecaWPF.csproj",
+      "packagesPath": "C:\\Users\\fabricio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabricio\\Desktop\\TRABALHO\\ProjetoBiblioteca-C-\\BibliotecaWPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fabricio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5785,7 +5785,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

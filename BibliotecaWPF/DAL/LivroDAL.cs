@@ -11,9 +11,10 @@ namespace BibliotecaWPF.DAL
         private static Context ctx = new Context();
         public static Usuario usuario = new Usuario();
 
-        public static bool CadastrarLivro(Livro livro)
+        //metodo que cadastra livro no banco
+        public static bool CadastrarLivro(Livro livro) //recebe o livro
         {
-            
+
             if (buscarISBN(livro.Isbn) == null)
             {
               
@@ -25,9 +26,13 @@ namespace BibliotecaWPF.DAL
             return false;
         }
 
+
+        //busca livros
         public static Livro buscarISBN(string isbn) =>
             ctx.Livros.FirstOrDefault(x => x.Isbn == isbn);
 
+
+        //pega a lista de livros
         public static List<Livro> ListarLivros() => ctx.Livros.ToList();
     }
 }

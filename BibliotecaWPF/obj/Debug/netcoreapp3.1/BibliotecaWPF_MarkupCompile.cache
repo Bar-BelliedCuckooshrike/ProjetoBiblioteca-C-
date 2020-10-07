@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\obj\Debug\netcoreapp3.1\
+C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\
 BibliotecaWPF
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\Felipe\Desktop\ProjetoBiblioteca-C--master\BibliotecaWPF\App.xaml
+C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\App.xaml
 51173584466
 
-281524933744
-217-1302198605
+171811443243
+217-745006921
 Views\CadastrarLivro.xaml;Views\CadastrarUsuario.xaml;Views\FormPrincipal.xaml;Views\Login.xaml;Views\MenuUsuario.xaml;
 
 False

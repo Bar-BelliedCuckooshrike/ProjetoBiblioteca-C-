@@ -8,7 +8,6 @@ namespace BibliotecaWPF.Models
     class Context : DbContext
     {
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Estante> Estantes { get; set; }
         public DbSet<Livro> Livros { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

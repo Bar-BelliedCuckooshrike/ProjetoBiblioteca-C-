@@ -1,4 +1,5 @@
 ﻿using BibliotecaWPF.Models;
+using BibliotecaWPF.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +11,17 @@ namespace BibliotecaWPF.DAL
     {
         private static Context ctx = new Context();
 
+        //busca o usuario no banco
         public static Usuario BuscarPorNome(string nome) =>
             ctx.Usuarios.FirstOrDefault(x => x.Nome == nome);
 
+        //cadastra o usuario
         public static bool Cadastrar(Usuario usuario)
         {
             if (BuscarPorNome(usuario.Nome) == null)
             {
-                ctx.Usuarios.Add(usuario);
-                ctx.SaveChanges();
+                ctx.Usuarios.Add(usuario); //envia o usuario
+                ctx.SaveChanges(); //persiste as atualisações 
                 return true;
             }
             return false;

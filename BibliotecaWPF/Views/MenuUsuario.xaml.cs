@@ -31,7 +31,7 @@ namespace BibliotecaWPF.Views
 
         private void btnListarLivros_Click(object sender, RoutedEventArgs e)
         {
-            CboLivros.ItemsSource = LivroDAL.ListarLivros();
+            CboLivros.ItemsSource = LivroDAL.ListarLivros(); //retorna a lista de livros
             CboLivros.DisplayMemberPath = "TituloLivro";
             CboLivros.SelectedValuePath = "usuariolog";
         }
