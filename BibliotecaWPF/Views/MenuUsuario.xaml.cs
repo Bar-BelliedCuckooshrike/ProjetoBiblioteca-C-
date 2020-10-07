@@ -22,7 +22,9 @@ namespace BibliotecaWPF.Views
         {
             InitializeComponent();
 
-             CboLivros.ItemsSource = LivroDAL.ListarLivros(); //retorna a lista de livros
+            CboLivros.ItemsSource = SETUsuarioDAL.ListaUsuarioLogadoGET(); // manda a lista do usuario
+
+            // CboLivros.ItemsSource = LivroDAL.ListarLivros(); //retorna a lista de livros
              CboLivros.DisplayMemberPath = "TituloLivro";
              CboLivros.SelectedValuePath = "usuariolog";
 

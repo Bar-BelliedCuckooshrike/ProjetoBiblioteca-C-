@@ -35,4 +35,11 @@ namespace BibliotecaWPF.DAL
         //pega a lista de livros no banco
         public static List<Livro> ListarLivros() => ctx.Livros.ToList();
     }
+
+
+
+
+
+
+
 }
