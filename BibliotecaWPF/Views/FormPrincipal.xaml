@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaWPF.Views"
         mc:Ignorable="d"
-        Title="Minha Biblioteca" Height="450" Width="800" WindowStyle="ToolWindow" FontFamily="Arial" FontWeight="Bold" FontStyle="Normal" Closing="Window_Closing">
+        Title="BibliotecaVirtual" Height="450" Width="800" WindowStyle="ToolWindow" FontFamily="Arial" FontWeight="Bold" FontStyle="Normal" Closing="Window_Closing">
     <Grid>
-        <Menu Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
+        <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
             <MenuItem x:Name="CadastrarUsuario" Header="Cadastrar usuário" Click="CadastrarUsuario_Click"/>
             <MenuItem x:Name="MenuSair" Header="Sair" Click="MenuSair_Click"/>
             <MenuItem x:Name="Login" Header="Login" Click="Login_Click_1"/>
         </Menu>
+        
 
     </Grid>
 </Window>

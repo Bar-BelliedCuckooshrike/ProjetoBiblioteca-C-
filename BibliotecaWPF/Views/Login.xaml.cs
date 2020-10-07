@@ -19,7 +19,9 @@ namespace BibliotecaWPF.Views
     /// </summary>
     public partial class Login : Window
     {
-       static Usuario usuariologado = new Usuario();
+       
+
+
         Usuario usuario = new Usuario();
 
         public Login()
@@ -27,13 +29,16 @@ namespace BibliotecaWPF.Views
             InitializeComponent();
         }
 
+        //metodo de login
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             usuario = new Usuario();
 
+            //recebe os dados
             usuario.Cpf = TxtCPFlogin.Text;
             usuario.senha = TxtSenhaLogin.Text;
 
+            //medo para validar
             if (UsuarioDAL.Logar(usuario.Cpf, usuario.senha))
             {
                 
@@ -42,9 +47,10 @@ namespace BibliotecaWPF.Views
 
                 //isso mostra qual usuario está logado:
                 usuario = UsuarioDAL.buscarCPF(TxtCPFlogin.Text);
-                menuUsuario.txtConfirmLogin.Text = usuario.Cpf.ToString();
+                menuUsuario.txtConfirmLogin.Text = usuario.Nome.ToString();
 
-                SETUsuarioDAL.UsuarioLogadoSET(usuario);              
+                SETUsuarioDAL.UsuarioLogadoSET(usuario);  //guarda o usuario logado 
+                SETUsuarioDAL.carregarLista(usuario, LivroDAL.ListarLivros()); //guarda a estante do usuario
             }
             else
             {

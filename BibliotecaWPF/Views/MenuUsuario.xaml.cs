@@ -21,19 +21,34 @@ namespace BibliotecaWPF.Views
         public MenuUsuario()
         {
             InitializeComponent();
+
+            CboLivros.ItemsSource = SETUsuarioDAL.ListaUsuarioLogadoGET(); // manda a lista do usuario
+
+            // CboLivros.ItemsSource = LivroDAL.ListarLivros(); //retorna a lista de livros
+             CboLivros.DisplayMemberPath = "TituloLivro";
+             CboLivros.SelectedValuePath = "usuariolog";
+
+
         }
 
+
+        //botão cadastrar livro
         private void btnCadastrarLivro_Click(object sender, RoutedEventArgs e)
         {
             CadastrarLivro cadastrarLivro = new CadastrarLivro();
             cadastrarLivro.Show();
         }
 
+        //botão para abrir o menu estante
         private void btnListarLivros_Click(object sender, RoutedEventArgs e)
         {
-            CboLivros.ItemsSource = LivroDAL.ListarLivros();
-            CboLivros.DisplayMemberPath = "TituloLivro";
-            CboLivros.SelectedValuePath = "usuariolog";
+            
+
+            ListaLivros listaLivros = new ListaLivros();
+
+            listaLivros.Show();
+
+
         }
     }
 }
