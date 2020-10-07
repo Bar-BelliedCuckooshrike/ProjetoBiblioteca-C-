@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaWPF.Views"
         mc:Ignorable="d"
-        Title="MenuUsuario" Height="450" Width="800">
+        Title="BibliotecaVirtual" Height="450" Width="800">
     <Grid>
         <TextBox x:Name="txtConfirmLogin" HorizontalAlignment="Left" Margin="552,38,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="169" FontWeight="Bold" BorderBrush="#00000000" FontSize="14"/>
         <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">

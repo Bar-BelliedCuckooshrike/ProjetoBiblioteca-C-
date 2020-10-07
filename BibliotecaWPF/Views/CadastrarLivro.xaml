@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaWPF.Views"
         mc:Ignorable="d"
-        Title="CadastrarLivro" Height="450" Width="800">
+        Title="BibliotecaVirtual" Height="450" Width="800">
     <Grid>
         <Label Content="Cadastrar livro" HorizontalAlignment="Left" Margin="31,26,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontSize="18"/>
         <Label Content="Titulo:" HorizontalAlignment="Left" Margin="31,91,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold"/>
