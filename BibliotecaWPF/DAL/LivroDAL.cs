@@ -13,12 +13,13 @@ namespace BibliotecaWPF.DAL
 
         public static bool CadastrarLivro(Livro livro)
         {
+            
             if (buscarISBN(livro.Isbn) == null)
             {
+              
                 ctx.Livros.Add(livro);
                 ctx.SaveChanges();
-
-                //usuario.estante.livros.Add(livro);
+                
                 return true;
             }
             return false;
@@ -26,5 +27,7 @@ namespace BibliotecaWPF.DAL
 
         public static Livro buscarISBN(string isbn) =>
             ctx.Livros.FirstOrDefault(x => x.Isbn == isbn);
+
+        public static List<Livro> ListarLivros() => ctx.Livros.ToList();
     }
 }

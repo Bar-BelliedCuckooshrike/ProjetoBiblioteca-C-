@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliotecaWPF.DAL;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -26,6 +27,13 @@ namespace BibliotecaWPF.Views
         {
             CadastrarLivro cadastrarLivro = new CadastrarLivro();
             cadastrarLivro.Show();
+        }
+
+        private void btnListarLivros_Click(object sender, RoutedEventArgs e)
+        {
+            CboLivros.ItemsSource = LivroDAL.ListarLivros();
+            CboLivros.DisplayMemberPath = "TituloLivro";
+            CboLivros.SelectedValuePath = "usuariolog";
         }
     }
 }
