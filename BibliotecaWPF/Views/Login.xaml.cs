@@ -42,7 +42,7 @@ namespace BibliotecaWPF.Views
 
                 //isso mostra qual usuario está logado:
                 usuario = UsuarioDAL.buscarCPF(TxtCPFlogin.Text);
-                menuUsuario.txtConfirmLogin.Text = usuario.Cpf.ToString();
+                menuUsuario.txtConfirmLogin.Text = usuario.Nome.ToString();
 
                 SETUsuarioDAL.UsuarioLogadoSET(usuario);              
             }

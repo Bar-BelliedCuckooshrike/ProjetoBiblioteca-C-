@@ -128,3 +128,5 @@ C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\
 C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.dll
 C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.pdb
 C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\BibliotecaWPF.genruntimeconfig.cache
+C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\Views\ListaLivros.g.cs
+C:\Users\fabricio\Desktop\TRABALHO\ProjetoBiblioteca-C-\BibliotecaWPF\obj\Debug\netcoreapp3.1\Views\ListaLivros.baml

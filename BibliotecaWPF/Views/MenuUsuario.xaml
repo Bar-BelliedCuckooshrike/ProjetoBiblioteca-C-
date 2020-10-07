@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="MenuUsuario" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtConfirmLogin" HorizontalAlignment="Left" Margin="48,341,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Menu Margin="10,10,10,0" Padding="10,0,0,0" VerticalAlignment="Top" Height="34">
-            <Button x:Name="btnCadastrarLivro" Content="Cadastrar livro" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnCadastrarLivro_Click"/>
-            <Button x:Name="btnListarLivros" Content="Listar livros" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnListarLivros_Click"/>
+        <TextBox x:Name="txtConfirmLogin" HorizontalAlignment="Left" Margin="552,38,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="169" FontWeight="Bold" BorderBrush="#00000000" FontSize="14"/>
+        <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
+            <Button x:Name="btnCadastrarLivro" Content="Cadastrar livro"  Click="btnCadastrarLivro_Click" Width="99" />
+            <Button x:Name="btnListarLivros" Content="Estante" HorizontalAlignment="Left"  Width="112" Click="btnListarLivros_Click"/>
         </Menu>
-        <ComboBox x:Name="CboLivros" HorizontalAlignment="Left" Margin="28,62,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CboLivros" HorizontalAlignment="Left" Margin="25,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="745,0,0,0" VerticalAlignment="Top" Width="39"/>
+        <Button Content="Configurações" HorizontalAlignment="Left" Margin="661,0,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,47,0,0" Text="Meus Livros" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" FontWeight="Bold" FontSize="14"/>
 
     </Grid>
 </Window>

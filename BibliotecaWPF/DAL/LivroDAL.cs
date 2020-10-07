@@ -27,12 +27,12 @@ namespace BibliotecaWPF.DAL
         }
 
 
-        //busca livros
+        //busca livros por codigo de barra
         public static Livro buscarISBN(string isbn) =>
             ctx.Livros.FirstOrDefault(x => x.Isbn == isbn);
 
 
-        //pega a lista de livros
+        //pega a lista de livros no banco
         public static List<Livro> ListarLivros() => ctx.Livros.ToList();
     }
 }
